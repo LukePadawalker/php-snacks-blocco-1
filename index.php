@@ -29,9 +29,7 @@ $partite = [
     ];
 
 
-foreach($partite as $partita)
-    echo $partita['squadraCasa'].$partita['squadraOspite'].'|'.$partita['puntiCasa'].'-'.$partita['puntiOspite']
-;
+
 
 ?>
 
@@ -49,6 +47,15 @@ foreach($partite as $partita)
     <title>Document</title>
 </head>
 <body>
+    <ul>
+        <?php 
+        
+        foreach($partite as $partita)
+           echo $partita['squadraCasa'].' '.$partita['squadraOspite'].' | '.$partita['puntiCasa'].'-'.$partita['puntiOspite'].' ';
+  
+        ;
+        ?>
+    </ul>
     
 </body>
 </html>
